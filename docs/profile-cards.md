@@ -5,7 +5,9 @@ The profile README uses one GitHub Profile Summary Cards image in two themes:
 `profile-summary-card-output/github_dark/0-profile-details.svg`. The paths are
 generated, committed assets, not placeholders or remote image hotlinks.
 
-`.github/workflows/profile-cards.yml` runs daily and on manual dispatch. Its
+`.github/workflows/profile-cards.yml` runs daily, on manual dispatch, and when
+its workflow or selector script changes on `main`. Changes to generated cards,
+README or documentation do not trigger a push run, avoiding commit loops. Its
 generation job gives the upstream action a read-only built-in `GITHUB_TOKEN` and
 checks out without persisted credentials. A separate publish job has
 `contents: write` only to commit changed images to this repository. No personal
@@ -38,7 +40,7 @@ Missing or incomplete cards fail the job before commit.
   `actions/download-artifact` v4 tag commit
   `d3f86a106a0bac45b974a628896c90dbdf5c8093`.
 - All actions use fixed full commits, not moving tags. Review upstream changes before
-  updating either SHA. The Summary Cards source review is not a runtime success
+  updating any SHA. The Summary Cards source review is not a runtime success
   claim; the first successful Actions run and resulting committed images are
   the generation proof.
 
@@ -50,8 +52,9 @@ public profile; no private repository details are queried or shown.
 
 ## Verification
 
-Run the `Refresh profile card` workflow with `workflow_dispatch`, inspect its
-successful run and committed images, then run:
+A push to `main` changing the workflow or selector script starts the first run.
+It can also be launched with `workflow_dispatch` in GitHub Actions. Inspect a
+successful run and its committed images, then run:
 
 ```sh
 python3 scripts/select-profile-cards.py --check-only
