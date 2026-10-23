@@ -1,6 +1,6 @@
 # Vitautas Brazas
 
-**Senior Software Engineer · Payments · AI developer tooling**  
+**Senior Software Engineer · Payments · AI developer tooling**<br>
 Vancouver, Canada · 7+ years in fintech, travel-tech, EdTech and e-commerce
 
 I'm a backend-focused full-stack engineer at **12Go / Travelier**, working on
@@ -24,14 +24,14 @@ I build with PHP and Symfony, Go, TypeScript and React.
 
 ## Selected projects
 
-- [**cc-millz**](https://github.com/Millon15/cc-millz) · **AI developer tooling**  
+- [**cc-millz**](https://github.com/Millon15/cc-millz) · **AI developer tooling**<br>
   A plugin marketplace for Claude Code and Codex, including paired-agent workflows,
   research tools and integrations with upstream tools.
-- [**bbkt**](https://github.com/Millon15/bbkt) · **Go contributions**  
+- [**bbkt**](https://github.com/Millon15/bbkt) · **Go contributions**<br>
   My fork of [zach-snell/bbkt](https://github.com/zach-snell/bbkt): pull-request
   comment pagination, resolution-state handling and CLI/MCP fixes with regression
   tests.
-- [**valentine-2026**](https://github.com/Millon15/valentine-2026) · **React / TypeScript**  
+- [**valentine-2026**](https://github.com/Millon15/valentine-2026) · **React / TypeScript**<br>
   A configurable quiz app with persistent progress, responsive UI and component
   tests. A small personal project, built to be adapted.
 
