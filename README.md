@@ -50,9 +50,11 @@ I build with PHP and Symfony, Go, TypeScript and React.
 
 ## GitHub activity
 
+<a href="profile-summary-card-output/default/0-profile-details.svg" title="Open the full-size contribution card">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="profile-summary-card-output/github_dark/0-profile-details.svg">
   <img src="profile-summary-card-output/default/0-profile-details.svg" width="700" alt="GitHub contributions and public repository summary for Millon15">
 </picture>
+</a>
 
-<sub>Most of my professional work lives in private repositories.</sub>
+<sub>Repository count excludes forks. Most of my professional work lives in private repositories.</sub>
